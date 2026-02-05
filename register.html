@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<style>
+body{
+    font-family: Arial;
+    background:#f1f5f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.box{
+    background:white;
+    padding:30px;
+    width:320px;
+    border-radius:10px;
+    box-shadow:0 6px 14px rgba(0,0,0,.1);
+}
+input,button{
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+}
+button{
+    background:#0f766e;
+    color:white;
+    border:none;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>Register</h2>
+
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+<input type="email" placeholder="Email">
+
+<button onclick="register()">Register</button>
+
+
+<p>Already have an account? <a href="index.html">Login</a></p>
+</div>
+<script>
+function register(){
+    alert("Registration successful!");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
